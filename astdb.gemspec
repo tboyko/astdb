@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["taylor@wrprojects.com"]
   gem.description   = %q{Interact with an Asterisk Database (AstDB) instance via ssh.}
   gem.summary       = %q{}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/tboyko/astdb"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
