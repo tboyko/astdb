@@ -24,11 +24,11 @@ require 'astdb'
 db = AstDB::Database.new host:     		'ssh.server.com',
                          username: 		'not-root',
                          password: 		'Secret!',        # Omit this line if using key-based auth.
-												 auto_reload: true              # Optionally disable the automatic initial load
-												                                # and updating of '.hash', instead opting to run
-												                                # '.reload_database' manually. Useful in high 
-												                                # latency or low bandwidth scenarios. 
-																												# Default: true 
+                         auto_reload: true              # Optionally disable the automatic initial load
+                                                        # and updating of '.hash', instead opting to run
+                                                        # reload_database' manually. Useful in high 
+                                                        # latency or low bandwidth scenarios. 
+                                                        # Default: true 
 
 # view a hash of the database
 p db.hash
@@ -42,7 +42,7 @@ end
 
 # see the updated database
 p db.hash
-'''
+```
 
 ## Contributing
 
