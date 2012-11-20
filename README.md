@@ -21,9 +21,9 @@ Or install it yourself as:
 ```ruby
 require 'astdb'
 
-db = AstDB::Database.new host:     		'ssh.server.com',
-                         username: 		'not-root',
-                         password: 		'Secret!',        # Omit this line if using key-based auth.
+db = AstDB::Database.new host:        'ssh.server.com',
+                         username:    'not-root',
+                         password:    'Secret!',        # Omit this line if using key-based auth.
                          auto_reload: true              # Optionally disable the automatic initial load
                                                         # and updating of '.hash', instead opting to run
                                                         # reload_database' manually. Useful in high 
